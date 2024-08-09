@@ -2,7 +2,7 @@ import streamlit as st
 from langchain_core.messages import ChatMessage
 from agent import create_agent
 
-st.title("검색이 가능한 챗봇")
+st.title("검색까지 해주는 챗봇")
 
 # 대화 기록이 없다면, chat_history 라는 키로 빈 대화를 저장하는 list 를 생성
 if "chat_history" not in st.session_state:
