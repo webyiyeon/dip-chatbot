@@ -12,7 +12,7 @@ import os
 # logging.langsmith("CH99-Streamlit")
 
 # 사이트의 제목 입력
-st.title("우리 모두의 챗GPT")
+st.title("챗GPT와 대화하기")
 
 if "OPENAI_API_KEY" in os.environ:
     st.write("API 키가 설정되었습니다.")
