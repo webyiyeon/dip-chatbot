@@ -25,18 +25,20 @@ def print_history():
         st.chat_message(chat_message.role).write(chat_message.content)
 
 
-# 사이드 바
-with st.sidebar:
-    search_count = st.number_input(
-        "검색 결과의 개수를 입력해주세요", min_value=1, max_value=10, value=2, step=1
-    )
+# # 사이드 바
+# with st.sidebar:
+#     search_count = st.number_input(
+#         "검색 결과의 개수를 입력해주세요", min_value=1, max_value=10, value=2, step=1
+#     )
 
-    # 설정이 완료 되었는지 확인하는 버튼
-    confirm_btn = st.button("설정 완료")
+#     # 설정이 완료 되었는지 확인하는 버튼
+#     confirm_btn = st.button("설정 완료")
 
-# 파일이 업로드 되었을 때
-if confirm_btn:
-    st.session_state["search_agent"] = youtube_agent(k=search_count)
+# # 파일이 업로드 되었을 때
+# if confirm_btn:
+#     st.session_state["search_agent"] = youtube_agent(k=search_count)
+
+st.session_state["search_agent"] = youtube_agent(k=5)
 
 # 이전 까지의 대화를 출력
 print_history()
@@ -44,7 +46,6 @@ print_history()
 user_input = st.chat_input("궁금한 내용을 입력해 주세요")
 
 if user_input:
-    # 파일이 업로드가 된 이후
     if st.session_state["search_agent"]:
         search_agent = st.session_state["search_agent"]
         # 사용자의 질문을 출력합니다.
