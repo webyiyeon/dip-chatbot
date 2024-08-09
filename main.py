@@ -1,7 +1,9 @@
 import streamlit as st
 import os 
 
-st.title("API 설정")
+st.title("🎈 Welcome")
+st.markdown("@author: [Weby](https://github.com/webyiyeon")
+st.markdown("[이메일](mailto:yiyeon79@gmail.com)")
 
 st.markdown("""
             OpenAI API 키 발급 방법은 아래 링크를 참고해주세요!
