@@ -1,13 +1,20 @@
 import streamlit as st
 import os 
 
-st.title("🎈 Welcome")
-st.markdown("@author: [Weby](https://github.com/webyiyeon")
-st.markdown("[이메일](mailto:yiyeon79@gmail.com)")
-
+st.title(":rainbow[Welcome]🎈")
 st.markdown("""
-            OpenAI API 키 발급 방법은 아래 링크를 참고해주세요!
-            * [발급방법](https://wikidocs.net/233342)
+            > Author &mdash; :blue-background[Weby]
+            >
+            > 🐈🐈‍⬛ &mdash; **[Gihub Page](https://github.com/webyiyeon)**
+            >
+            > 📨 &mdash; **[Send Email](mailto:yiyeon79@gmail.com)**
+            """)
+st.divider()
+st.subheader("API 키 설정")
+st.markdown("""
+            > OpenAI API 키 발급 방법은 아래 링크를 참고해주세요!
+            >
+            > ℹ️ [발급 방법](https://wikidocs.net/233342) (<랭체인LangChain 노트> - LangChain 한국어 튜토리얼🇰🇷)
             """)
 
 # API 키 입력
