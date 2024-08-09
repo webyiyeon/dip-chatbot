@@ -5,7 +5,7 @@ st.title(":rainbow[Welcome]🎈")
 st.markdown("""
             > Author &mdash; :blue-background[Weby]
             >
-            > 🐈🐈‍⬛ &mdash; **[Gihub Page](https://github.com/webyiyeon)**
+            > 🐈🐈‍⬛ &mdash; **[Github Page](https://github.com/webyiyeon)**
             >
             > 📨 &mdash; **[Send Email](mailto:yiyeon79@gmail.com)**
             """)
